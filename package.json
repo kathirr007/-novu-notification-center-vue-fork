@@ -2,7 +2,7 @@
   "name": "novu-notification-center-vue-fork",
   "private": false,
   "public": true,
-  "version": "0.12.1",
+  "version": "0.12.2",
   "description": "Vue specific wrapper for notification-center",
   "repository": {
     "type": "git",
