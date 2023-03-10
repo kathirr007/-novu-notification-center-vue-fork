@@ -1,12 +1,11 @@
 {
   "name": "@novu/notification-center-vue-fork",
-  "sideEffects": false,
-  "private": false,
-  "version": "0.12.0",
+  "public": true,
+  "version": "0.12.1",
   "description": "Vue specific wrapper for notification-center",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionic-team/ionic.git"
+    "url": "https://github.com/kathirr007/-novu-notification-center-vue-fork"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -52,6 +51,5 @@
       "node_modules",
       "dist"
     ]
-  },
-  "gitHead": "1a8fa1bd98790810d7fb69c4dc0e82d33c20eec2"
+  }
 }
