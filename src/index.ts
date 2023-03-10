@@ -1,6 +1,6 @@
 import type { App } from 'vue';
-import FloatingVue from 'floating-vue';
-import 'floating-vue/dist/style.css';
+import FloatingVue from 'floating-vue-fork';
+import 'floating-vue-fork/dist/style.css';
 import { NotificationCenterContentWebComponent } from '@novu/notification-center';
 
 import { NotificationCenterComponent } from './lib';
@@ -11,7 +11,10 @@ const ONE_DAY = 24 * 60 * 60 * 1000;
 
 export default {
   install(app: App) {
-    customElements.define('notification-center-content-component', NotificationCenterContentWebComponent);
+    customElements.define(
+      'notification-center-content-component',
+      NotificationCenterContentWebComponent
+    );
 
     app.use(FloatingVue, {
       disposeTimeout: ONE_DAY,

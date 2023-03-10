@@ -12,7 +12,7 @@ specifiers:
   '@vue/tsconfig': ^0.1.3
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
-  floating-vue: 2.0.0-beta.20
+  floating-vue-fork: 2.0.0-beta.23
   npm-run-all: ^4.1.5
   prettier: ~2.8.0
   react: 17.0.1
@@ -26,7 +26,7 @@ specifiers:
 dependencies:
   '@emotion/css': 11.10.6
   '@novu/notification-center': 0.12.0_w7o5yyljkiidx2s2nzb26ottzu
-  floating-vue: 2.0.0-beta.20_vue@3.2.47
+  floating-vue-fork: 2.0.0-beta.23_vue@3.2.47
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
 
@@ -2189,8 +2189,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /floating-vue/2.0.0-beta.20_vue@3.2.47:
-    resolution: {integrity: sha512-N68otcpp6WwcYC7zP8GeJqNZVdfvS7tEY88lwmuAHeqRgnfWx1Un8enzLxROyVnBDZ3TwUoUdj5IFg+bUT7JeA==}
+  /floating-vue-fork/2.0.0-beta.23_vue@3.2.47:
+    resolution: {integrity: sha512-pRqAF53h/bFT34xUXRK4sXcX5mHxyb5Uh7KSvMGPvtEKxNYVa8Uy/ehtdkKuEXfUeCt7Mbtp3sRB/YHiNtA7Fg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:

@@ -1248,10 +1248,7 @@ var $R = () => gc({
     async container() {
       this.isShown && (this.$_ensureTeleport(), await this.$_computePosition());
     }
-  }, [
-    "triggers",
-    "positioningDisabled"
-  ].reduce((e, t) => (e[t] = "$_refreshListeners", e), {})), [
+  }, ["triggers", "positioningDisabled"].reduce((e, t) => (e[t] = "$_refreshListeners", e), {})), [
     "placement",
     "distance",
     "skidding",
@@ -1462,7 +1459,7 @@ var $R = () => gc({
       let e = this.container;
       if (typeof e == "string" ? e = window.document.querySelector(e) : e === !1 && (e = this.$_targetNodes[0].parentNode), !e)
         throw new Error("No container for popover: " + this.container);
-      e.appendChild(this.$_popperNode), this.isMounted = !0;
+      e.contains(this.$_popperNode) || e.appendChild(this.$_popperNode), this.isMounted = !0;
     },
     $_addEventListeners() {
       const e = (n) => {
@@ -2171,7 +2168,7 @@ function $L(e, t = {}) {
   e.$_vTooltipInstalled || (e.$_vTooltipInstalled = !0, wR(dc, t), e.directive("tooltip", PL), e.directive("close-popper", kL), e.component("VTooltip", dL), e.component("VDropdown", uL), e.component("VMenu", cL));
 }
 const SL = {
-  version: "2.0.0-beta.20",
+  version: "2.0.0-beta.23",
   install: $L,
   options: dc
 };
@@ -71389,7 +71386,10 @@ const QKe = ({
 });
 const ZKe = 24 * 60 * 60 * 1e3, rJe = {
   install(e) {
-    customElements.define("notification-center-content-component", IKe), e.use(SL, {
+    customElements.define(
+      "notification-center-content-component",
+      IKe
+    ), e.use(SL, {
       disposeTimeout: ZKe,
       themes: {
         dark: {
