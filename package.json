@@ -1,5 +1,6 @@
 {
-  "name": "@novu/notification-center-vue-fork",
+  "name": "novu-notification-center-vue-fork",
+  "private": false,
   "public": true,
   "version": "0.12.1",
   "description": "Vue specific wrapper for notification-center",
